@@ -12,17 +12,17 @@ public class SelectionsSort {
             for (int j =i+1;j<N;j++){
                 if (arr[j]<arr[indexMin]) indexMin =j;
             }
-            if (indexMin!=i){
-                int temp = arr[indexMin];
-                arr[indexMin] = arr[i];
-                arr[i] = temp;
-            }
+
+            int temp = arr[indexMin];
+            arr[indexMin] = arr[i];
+            arr[i] = temp;
+
         }
         System.out.println(Arrays.toString(arr));
     }
 
     public static void main(String[] args) {
-        int[] arr = {9,8,7,6,5};
+        int[] arr = {3,6,1,8,4,5};
         Selection_Sort(arr); // [5, 6, 7, 8, 9]
     }
 
