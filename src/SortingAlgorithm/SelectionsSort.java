@@ -23,7 +23,7 @@ public class SelectionsSort {
 
     public static void main(String[] args) {
         int[] arr = {3,6,1,8,4,5};
-        Selection_Sort(arr); // [5, 6, 7, 8, 9]
+        Selection_Sort(arr); // [1, 3, 4, 5, 6, 8]
     }
 
 }
