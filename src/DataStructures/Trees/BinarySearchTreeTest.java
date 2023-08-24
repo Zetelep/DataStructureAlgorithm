@@ -11,5 +11,8 @@ public class BinarySearchTreeTest {
         tree.display(); //1 2 3 7 8
         System.out.println(tree.search(1)); //true
         System.out.println(tree.search(0)); //false
+        tree.remove(0);//0 doesn't exist!
+        tree.remove(3);
+        tree.display(); //1 2 7 8
     }
 }
