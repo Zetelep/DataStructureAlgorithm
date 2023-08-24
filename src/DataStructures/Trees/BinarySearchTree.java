@@ -33,8 +33,15 @@ public class BinarySearchTree {
         return searchHelper(root,data);
     }
     private boolean searchHelper (Node root, int data){
-
-        return false;
+        if (root == null) {
+            return false;
+        }else if (root.data == data) {
+            return true;
+        }else if (root.data>data) {
+            return searchHelper(root.left,data);
+        }else{
+            return searchHelper(root.right,data);
+        }
     }
     public Node removeHelper(Node root, int data){
         return null;
