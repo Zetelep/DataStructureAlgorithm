@@ -34,4 +34,20 @@ public class GraphMatrix {
         }
     }
 
+    public  void depthFirstSearch(int src){
+    boolean[] visited = new boolean[matrix.length];
+    DFShelper(src,visited);
+    }
+    private void DFShelper(int src, boolean[] visited){
+        if (visited[src]){
+            return;
+        }else {
+            visited[src] = true;
+            System.out.println(nodes.get(src).data+" = visited");
+        }
+        for (int i = 0; i < matrix[src].length; i++) {
+            if (matrix[src][i]==1) DFShelper(i,visited);
+        }
+    }
+
 }

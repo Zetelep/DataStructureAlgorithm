@@ -18,7 +18,7 @@ public class GraphTest {
         graph.addEdge(4,2);
 
         graph.print();
-
+        graph.depthFirstSearch(3);
         System.out.println(graph.checkEdge(0,1)); //checking is there an edge in A and B
 
         //List Adjacency Graph
