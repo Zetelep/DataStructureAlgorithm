@@ -12,6 +12,7 @@ public class GraphTest {
 
         graph.addEdge(0,1);
         graph.addEdge(1,2);
+        graph.addEdge(1,4);
         graph.addEdge(2,3);
         graph.addEdge(2,4);
         graph.addEdge(4,0);
@@ -19,8 +20,9 @@ public class GraphTest {
 
         graph.print();
         graph.depthFirstSearch(3);
-        System.out.println(graph.checkEdge(0,1)); //checking is there an edge in A and B
 
+        System.out.println(graph.checkEdge(0,1)); //checking is there an edge in A and B
+        graph.breathFirstSearch(1);
         //List Adjacency Graph
         GraphList graph2 = new GraphList();
         graph2.addNode(new Node('A'));
